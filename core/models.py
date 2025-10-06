@@ -20,8 +20,8 @@ class Drone(models.Model):
 
     serial_number = models.CharField(max_length=100, unique=True)
     model = models.CharField(max_length=20, choices=MODEL_CHOICES)
-    weight_limit = models.FloatField(default=500)  # grams
-    battery_capacity = models.IntegerField(default=100)  # %
+    weight_limit = models.FloatField(default=500)
+    battery_capacity = models.IntegerField(default=100) 
     state = models.CharField(max_length=20, choices=STATE_CHOICES, default='IDLE')
 
     def __str__(self):
