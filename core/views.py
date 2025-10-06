@@ -8,6 +8,7 @@ from .serializers import DroneSerializer, MedicationSerializer
 class DroneViewSet(viewsets.ModelViewSet):
     queryset = Drone.objects.all()
     serializer_class = DroneSerializer
+    lookup_field = 'serial_number'
 
     # Custom endpoint: get battery level
     @action(detail=True, methods=['get'])

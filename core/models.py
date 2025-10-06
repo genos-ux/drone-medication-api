@@ -18,7 +18,7 @@ class Drone(models.Model):
         ('RETURNING', 'RETURNING'),
     ]
 
-    serial_number = models.CharField(max_length=100, unique=True)
+    serial_number = models.CharField(max_length=100, primary_key=True)
     model = models.CharField(max_length=20, choices=MODEL_CHOICES)
     weight_limit = models.FloatField(default=500)
     battery_capacity = models.IntegerField(default=100) 
