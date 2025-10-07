@@ -41,6 +41,7 @@ It also includes validation logic to ensure that:
 git clone https://github.com/<your-username>/drone-medication-api.git
 cd drone-medication-api
 
+---
 
 ### 2️⃣ Create and activate a virtual environment
 ```bash
@@ -50,6 +51,7 @@ venv\Scripts\activate
 # On Mac/Linux
 source venv/bin/activate
 
+---
 
 ###  3️⃣ Install dependencies
 ```bash
