@@ -42,14 +42,10 @@ git clone https://github.com/<your-username>/drone-medication-api.git
 cd drone-medication-api
 
 
-# 🚁 Drone Medication Delivery API
-
-This project is a **Django REST Framework** backend for managing drones and their medications.  
-It was built as part of an internship backend assessment, focusing on API design, validation, and clean backend architecture.
 
 ---
 
-## 🧭 Overview
+### 🧭 Overview
 
 The system allows administrators to:
 
@@ -68,7 +64,7 @@ It also includes validation logic to ensure that:
 
 ---
 
-## ⚙️ Tech Stack
+### ⚙️ Tech Stack
 
 - **Language:** Python 3.11+  
 - **Framework:** Django 5 + Django REST Framework  
