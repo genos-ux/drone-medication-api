@@ -40,6 +40,7 @@ The system allows administrators to:
 
 ## 🚀 Getting Started
 
+```markdown
 ### 1️⃣ Clone the repository
 
 ```bash
@@ -47,6 +48,7 @@ git clone https://github.com/<your-username>/drone-medication-api.git
 cd drone-medication-api
 
 ---
+
 
 ### 2️⃣ Create and Activate a Virtual Environment
 
