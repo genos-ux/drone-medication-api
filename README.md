@@ -52,7 +52,7 @@ The API is hosted on Render and accessible here:
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/drone-medication-api.git
+git clone https://github.com/genos-ux/drone-medication-api.git
 cd drone-medication-api
 
 ```
