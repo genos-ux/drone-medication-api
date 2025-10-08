@@ -12,7 +12,7 @@ class DroneViewSet(viewsets.ModelViewSet):
 
     # Custom endpoint: get battery level
     @action(detail=True, methods=['get'])
-    def battery(self, request, pk=None):
+    def battery(self, request, serial_number=None):
         drone = self.get_object()
         return Response({"battery_capacity": drone.battery_capacity})
 
@@ -25,7 +25,7 @@ class DroneViewSet(viewsets.ModelViewSet):
 
     # Custom endpoint: load medications onto a drone
     @action(detail=True, methods=['post'])
-    def load(self, request, pk=None):
+    def load(self, request, serial_number=None):
         drone = self.get_object()
         if drone.battery_capacity < 25:
             return Response(
@@ -37,7 +37,7 @@ class DroneViewSet(viewsets.ModelViewSet):
         total_weight = sum(m['weight'] for m in meds_data)
 
         for med in meds_data:
-            med['drone'] = drone.id
+            med['drone'] = drone.serial_number
             serializer = MedicationSerializer(data=med)
             if serializer.is_valid():
                 serializer.save()
