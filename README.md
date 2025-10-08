@@ -52,7 +52,7 @@ cd drone-medication-api
 ---
 
 
-```markdown
+
 ### 2️⃣ Create and activate a virtual environment
 
 Create a virtual environment to isolate your project dependencies.
@@ -65,3 +65,5 @@ venv\Scripts\activate
 source venv/bin/activate
 
 ```
+
+---
