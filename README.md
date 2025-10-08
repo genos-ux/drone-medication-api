@@ -47,12 +47,21 @@ The system allows administrators to:
 git clone https://github.com/<your-username>/drone-medication-api.git
 cd drone-medication-api
 
+```
+
 ---
 
 
-### 2️⃣ Create and Activate a Virtual Environment
+```markdown
+### 2️⃣ Create and activate a virtual environment
 
 Create a virtual environment to isolate your project dependencies.
 
 ```bash
 python -m venv venv
+# On Windows
+venv\Scripts\activate
+# On Mac/Linux
+source venv/bin/activate
+
+```
