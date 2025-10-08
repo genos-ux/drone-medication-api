@@ -113,3 +113,102 @@ Base URL: http://127.0.0.1:8000/api/
 | `/drones/<serial_number>/medications/` | **GET**  | Get medications loaded on a specific drone      |
 | `/drones/available/`                   | **GET**  | List available drones for loading               |
 | `/drones/<serial_number>/battery/`     | **GET**  | Check a drone’s battery level                   |
+
+
+---
+
+### 🧪 Example Requests
+### 📝 Register a new drone
+
+POST /api/drones/
+
+### Request:
+
+```json
+{
+  "serial_number": "DRN2001",
+  "model": "Lightweight",
+  "weight_limit": 250,
+  "battery_capacity": 90,
+  "state": "IDLE"
+}
+
+```
+
+---
+
+### Response (201 Created):
+
+```json
+{
+  "serial_number": "DRN2001",
+  "model": "Lightweight",
+  "weight_limit": 250,
+  "battery_capacity": 90,
+  "state": "IDLE"
+}
+
+```
+
+---
+
+### 📦 Load drone with medication
+
+POST /api/drones/DRN2001/load/
+
+### Request:
+
+```json
+{
+  "medications": [
+    { "name": "Panadol", "weight": 50, "code": "P001" }
+  ]
+}
+
+```
+
+### Response (201 Created):
+
+```json
+{
+  "message": "Medication loaded successfully."
+}
+
+```
+
+### 🧰 Admin Dashboard
+
+Django provides an easy-to-use admin interface.
+After creating a superuser:
+
+```bash
+python manage.py createsuperuser
+
+```
+
+You can log in at
+👉 http://127.0.0.1:8000/admin/
+
+and manage drones, medications, and uploads.
+
+
+---
+
+### 💡 Notes
+
+- Drones with battery < 25% cannot be loaded.
+
+- Maximum total medication weight per drone = 500 g.
+
+- Each medication image is uploaded to the local media/ directory.
+
+- Use python manage.py seed to preload sample drones and medications.
+
+
+---
+
+### 🧑‍💻 Author
+
+Gabriel Kyeremateng
+Backend Developer | Cloud Enthusiast
+📧 gabriel.kyeremateng.gk@gmail.com
