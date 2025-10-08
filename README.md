@@ -67,3 +67,50 @@ source venv/bin/activate
 ```
 
 ---
+
+
+### 3️⃣ Install dependencies
+
+```bash
+pip install -r requirements.txt
+
+```
+
+---
+
+
+### 4️⃣ Apply migrations
+
+```bash
+python manage.py migrate
+
+```
+
+---
+
+### 6️⃣ Run the server
+
+```bash
+python manage.py runserver
+
+```
+
+---
+
+Visit: http://127.0.0.1:8000/admin/
+Login with your admin credentials.
+
+
+### 📡 API Endpoints
+
+Base URL: http://127.0.0.1:8000/api/
+
+Endpoint	Method	Description
+
+
+/drones/	POST	Register a new drone
+/drones/	GET	List all drones
+/drones/<serial_number>/load/	POST	Load a drone with medication (if battery > 25%)
+/drones/<serial_number>/medications/	GET	Get medications loaded on a specific drone
+/drones/available/	GET	List available drones for loading
+/drones/<serial_number>/battery/	GET	Check a drone’s battery level
