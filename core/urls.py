@@ -14,7 +14,3 @@ urlpatterns = [
     path('/', home), 
     path('', include(router.urls)),
 ]
-
-# add media uploads for medication images (so the image field actually works)
-
-# or write unit tests for your validation logic.

@@ -38,6 +38,14 @@ The system allows administrators to:
 
 ---
 
+### 🌐 Live API
+
+The API is hosted on Render and accessible here:
+
+👉 https://drone-medication-api.onrender.com/api
+
+---
+
 ## 🚀 Getting Started
 
 
@@ -103,7 +111,9 @@ Login with your admin credentials.
 
 ### 📡 API Endpoints
 
-Base URL: http://127.0.0.1:8000/api/
+### 🔸 Base URLs
+- **Local:** `http://127.0.0.1:8000/api/`
+- **Live:** [https://drone-medication-api.onrender.com/api/](https://drone-medication-api.onrender.com/api/)
 
 | Endpoint                               | Method   | Description                                     |
 | -------------------------------------- | -------- | ----------------------------------------------- |
@@ -114,6 +124,8 @@ Base URL: http://127.0.0.1:8000/api/
 | `/drones/available/`                   | **GET**  | List available drones for loading               |
 | `/drones/<serial_number>/battery/`     | **GET**  | Check a drone’s battery level                   |
 
+### 💡 Note: 
+The live Render instance may take a few seconds to wake up on the first request.
 
 ---
 
