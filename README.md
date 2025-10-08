@@ -17,14 +17,14 @@ The system allows administrators to:
 
 ### Validation Rules
 
-- No drone exceeds its maximum weight limit (**500 g**)  
+- No drone exceeds its maximum weight limit  
 - Drones with less than **25% battery** cannot be loaded  
 - Drone serial numbers must be unique  
 - Each medication must include:
   - `name`
   - `weight`
   - `code`
-  - (optional) `image`
+  - `image`
 
 ---
 
