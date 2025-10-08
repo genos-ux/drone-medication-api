@@ -210,5 +210,14 @@ and manage drones, medications, and uploads.
 ### 🧑‍💻 Author
 
 Gabriel Kyeremateng
+
 Backend Developer | Cloud Enthusiast
+
 📧 gabriel.kyeremateng.gk@gmail.com
+
+
+---
+
+### 🪶 License
+
+This project is licensed under the MIT License.
