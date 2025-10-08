@@ -40,7 +40,7 @@ The system allows administrators to:
 
 ## 🚀 Getting Started
 
-```markdown
+
 ### 1️⃣ Clone the repository
 
 ```bash
